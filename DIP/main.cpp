@@ -5,7 +5,8 @@
 
 #include <opencv2/opencv.hpp>
 
-//#include <proj_api.h>
+#define ACCEPT_USE_OF_DEPRECATED_PROJ_API_H true
+#include <proj_api.h>
 
 #include "defines.h"
 #include "utils.h"
@@ -20,9 +21,9 @@ struct LidarRanges {
     float min_x_, max_x_, min_y_, max_y_, min_z_, max_z_;
     float delta_x_, delta_y_, delta_z_;
     char* filename_;
-    int type_ = 0x1F58D1;
+    int type_ = 0x1F5711;
     int offset_ = 0;
-    int base_type_ = 0x1F58D1;
+    int base_type_ = 0x1F5711;
 
     LidarRanges(const char* filename, float min_x, float max_x, float min_y, float max_y, float min_z, float max_z, float delta_x, float delta_y, float delta_z)
         : filename_((char*)filename), min_x_(min_x), max_x_(max_x), min_y_(min_y), max_y_(max_y), min_z_(min_z), max_z_(max_z), delta_x_(delta_x), delta_y_(delta_y), delta_z_(delta_z)
@@ -220,7 +221,7 @@ void fill_image( const char *filename, cv::Mat & heightmap_8uc1_img, float min_x
         for (i = 0; i < items_c; i++)
         {
             item = items[i];
-            // 0000 0111        // 111 110 101 100 011 010 001 // 0001 1111 0101 1000 1101 0001
+            // 0000 0111
             mask = 1 << item.type;
             if ((type & mask) != mask)
                 continue;
@@ -441,11 +442,44 @@ void create_windows(const int width, const int height) {
 
 } // create_windows
 
+void transform_sjtsk_to_wgs84(LidarRanges ranges)
+{
+    projPJ wgs84, sjtsk;
+    double min_x, min_y, min_z, max_x, max_y, max_z;
+    int p;
+
+    if (!(wgs84 = pj_init_plus("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs")))
+        return exit(1);
+    if (!(sjtsk = pj_init_plus("+proj=krovak +ellps=bessel +towgs84=570.8,85.7,462.8,4.998,1.587,5.261,3.56")))
+        return exit(1);
+    /*if (!(wgs84 = pj_init_plus("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs")))
+        return exit(1);
+    if (!(sjtsk = pj_init_plus("+proj=krovak +lat_0=49.5 +lon_0=24.83333333333333 +alpha=30.28813972222222 +k=0.9999 +x_0=0 +y_0=0 +ellps=bessel +pm=greenwich +units=m +no_defs +towgs84=570.8,85.7,462.8,4.998,1.587,5.261,3.56")))
+        return exit(1);*/
+
+    min_x = (double)ranges.min_x_;
+    min_y = (double)ranges.min_y_;
+    min_z = (double)ranges.min_z_;
+    max_x = (double)ranges.max_x_;
+    max_y = (double)ranges.max_y_;
+    max_z = (double)ranges.max_z_;
+    p = pj_transform(sjtsk, wgs84, 1, 1, &min_x, &min_y, &min_z);
+    p = pj_transform(sjtsk, wgs84, 1, 1, &max_x, &max_y, &max_z);
+
+    pj_free(wgs84);
+    pj_free(sjtsk);
+
+    printf("min x: %f, max x: %f\n", min_x * RAD_TO_DEG, max_x * RAD_TO_DEG);
+    printf("min y: %f, max y: %f\n", min_y * RAD_TO_DEG, max_y * RAD_TO_DEG);
+    printf("min z: %f, max z: %f\n", min_z * RAD_TO_DEG, max_z * RAD_TO_DEG);
+}
+
 void process_lidar( const char *txt_filename, const char *bin_filename, const char *img_filename ) {
     float min_x, max_x, min_y, max_y, min_z, max_z;
     float delta_x, delta_y, delta_z;
     MouseProbe *mouse_probe;
 
+    cv::Mat heightmap_8uc1_img_r;
     cv::Mat heightmap_8uc1_img;      // image of source of lidar data
     cv::Mat heightmap_show_8uc3_img; // image to detected areas
     cv::Mat edgemap_8uc1_img;        // image for edges
@@ -470,6 +504,8 @@ void process_lidar( const char *txt_filename, const char *bin_filename, const ch
         delta_x, delta_y, delta_z
     );
 
+    transform_sjtsk_to_wgs84(lidar_ranges);
+
     // create images according to data from the source file
     heightmap_8uc1_img = cv::Mat( cvSize( cvRound( delta_x + 0.5f ), cvRound( delta_y + 0.5f ) ), CV_8UC1 );
     heightmap_show_8uc3_img = cv::Mat( cvSize( cvRound( delta_x + 0.5f ), cvRound( delta_y + 0.5f ) ), CV_8UC3 );
@@ -485,7 +521,8 @@ void process_lidar( const char *txt_filename, const char *bin_filename, const ch
     
     create_images(heightmap_8uc1_img, heightmap_show_8uc3_img, edgemap_8uc1_img, lidar_ranges);
 
-    //cv::imwrite( img_filename, heightmap_8uc1_img );
+    cv::flip(heightmap_8uc1_img, heightmap_8uc1_img_r, 0);
+    cv::imwrite( img_filename, heightmap_8uc1_img_r );
 
     // wait here for user input using (mouse clicking)
     while ( 1 ) {

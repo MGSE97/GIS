@@ -1,0 +1,30 @@
+
+<!-- saved from url=(0053)http://mrl.cs.vsb.cz/people/gaura/gis/index_stub.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1250"></head><body><header>
+        <link rel="stylesheet" href="./index_stub_files/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="">
+
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="./index_stub_files/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+        <style>
+            #mapid { height: 580px; }
+        </style>
+    </header>
+    
+        <div id="mapid"></div>
+
+        <script>
+                var mymap = L.map('mapid').setView([49.853, 18.525], 16);
+
+                L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                    maxZoom: 18,
+                    id: 'mapbox/streets-v11',
+                    accessToken: 'pk.eyJ1IjoibWdzZSIsImEiOiJja21ldW8yY2wwaTE2MndwajFodW1sNWx5In0.WpU7a_8agi5MOtRACbNGWw'
+                }).addTo(mymap);
+
+                var imageUrl = 'pt000023.png',
+                    imageBounds = [[49.850347, 18.519789], [49.855761, 18.526561]];
+                L.imageOverlay(imageUrl, imageBounds, {opacity: 0.8}).addTo(mymap);
+        </script>
+    
+</body></html>

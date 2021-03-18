@@ -1,0 +1,201 @@
+2021/03/18 13:45:44 Starting OSGeo4W install, version 2.579
+2021/03/18 13:45:44 using locales .1250
+2021/03/18 13:45:44 io_stream_cygfile: fopen(/etc/setup/setup.rc) failed 2 No such file or directory
+2021/03/18 13:45:44 Current Directory: C:\Users\Martin\AppData\Local\Temp
+2021/03/18 13:45:44 Root Directory: C:\OSGeo4W64
+2021/03/18 13:45:44 Could not open service McShield for query, start and stop. McAfee may not be installed, or we don't have access.
+2021/03/18 13:45:58 source: network install
+2021/03/18 13:46:39 root: S:\Software\OSGeo4W
+2021/03/18 13:46:43 Selected local directory: C:\Users\Martin\AppData\Local\Temp
+2021/03/18 13:46:43 Menu name: OSGeo4W
+2021/03/18 13:46:46 net: Direct
+Cached mirror list unavailable
+get_url_to_membuf http://download.osgeo.org/osgeo4w/mirrors.lst
+getUrlToStream http://download.osgeo.org/osgeo4w/mirrors.lst
+2021/03/18 13:46:55 site: http://download.osgeo.org/osgeo4w/
+get_url_to_membuf http://download.osgeo.org/osgeo4w/x86_64/setup.ini.bz2
+getUrlToStream http://download.osgeo.org/osgeo4w/x86_64/setup.ini.bz2
+2021/03/18 13:46:55 io_stream_cygfile: fopen(/etc/setup/installed.db) failed 2 No such file or directory
+ The package <gdal-dev-ecw-3.3.0-111> has a non-free license it was successfully added 
+ The package <gdal-dev-ecw-3.3.0-110> has a non-free license it was successfully added 
+ The package <gdal-dev-mrsid-3.3.0-111> has a non-free license it was successfully added 
+ The package <gdal-dev-mrsid-3.3.0-110> has a non-free license it was successfully added 
+ The package <gdal-ecw-3.1.4-3> has a non-free license it was successfully added 
+ The package <gdal-ecw-3.1.4-2> has a non-free license it was successfully added 
+ The package <gdal-filegdb-3.1.4-3> has a non-free license it was successfully added 
+ The package <gdal-filegdb-3.1.4-2> has a non-free license it was successfully added 
+ The package <gdal-mrsid-3.1.4-3> has a non-free license it was successfully added 
+ The package <gdal-mrsid-3.1.4-2> has a non-free license it was successfully added 
+ The package <gdal2-ecw-2.4.3-1> has a non-free license it was successfully added 
+ The package <gdal2-filegdb-2.4.3-1> has a non-free license it was successfully added 
+ The package <gdal2-mrsid-2.4.3-1> has a non-free license it was successfully added 
+ The package <giflib-5.1.4-1> has a non-free license it was successfully added 
+ The package <hdf4-4.2.14-1> has a non-free license it was successfully added 
+ The package <hdf5-1.10.5-5> has a non-free license it was successfully added 
+ The package <hdf5-1.10.5-4> has a non-free license it was successfully added 
+ The package <libwebp-1.0.2-1> has a non-free license it was successfully added 
+ The package <netcdf-4.7.3-2> has a non-free license it was successfully added 
+ The package <netcdf-4.7.3-1> has a non-free license it was successfully added 
+ The package <oci-12.1.0.1.0-1> has a non-free license it was successfully added 
+ The package <oci-devel-12.1.0.1.0-1> has a non-free license it was successfully added 
+ The package <proj-bwta2017-1.0-1> has a non-free license it was successfully added 
+ The package <sqlncli-2012-1> has a non-free license it was successfully added 
+ The package <szip-2.1.1-1> has a non-free license it was successfully added 
+ The package <szip-2.1-1> has a non-free license it was successfully added 
+2021/03/18 13:46:56 io_stream_cygfile: fopen(/etc/setup/timestamp) failed 2 No such file or directory
+2021/03/18 13:49:19 Adding required dependency msvcrt2015: Selecting version 2.0-2 for installation.
+2021/03/18 13:49:19 Adding required dependency proj-datumgrid: Selecting version 1.8-1 for installation.
+2021/03/18 13:49:19 Adding required dependency proj-hpgn: Selecting version 1.0-1 for installation.
+get_url_to_file http://download.osgeo.org/osgeo4w//x86_64/release/msvcrt/msvcrt2015/msvcrt2015-2.0-2.tar.bz2 C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/msvcrt/msvcrt2015/msvcrt2015-2.0-2.tar.bz2.tmp
+2021/03/18 13:49:20 Downloaded C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/msvcrt/msvcrt2015/msvcrt2015-2.0-2.tar.bz2
+get_url_to_file http://download.osgeo.org/osgeo4w//x86_64/release/proj/proj-6.3.2-1.tar.bz2 C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-6.3.2-1.tar.bz2.tmp
+2021/03/18 13:49:23 Downloaded C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-6.3.2-1.tar.bz2
+get_url_to_file http://download.osgeo.org/osgeo4w//x86_64/release/proj/proj-datumgrid/proj-datumgrid-1.8-1.tar.bz2 C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-datumgrid/proj-datumgrid-1.8-1.tar.bz2.tmp
+2021/03/18 13:49:28 Downloaded C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-datumgrid/proj-datumgrid-1.8-1.tar.bz2
+get_url_to_file http://download.osgeo.org/osgeo4w//x86_64/release/proj/proj-hpgn/proj-hpgn-1.0-1.tar.bz2 C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-hpgn/proj-hpgn-1.0-1.tar.bz2.tmp
+2021/03/18 13:49:29 Downloaded C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-hpgn/proj-hpgn-1.0-1.tar.bz2
+2021/03/18 13:49:29 error: Environment variable 'PATH' length exceeds 1024; running with %WINDIR%\system32;%WINDIR%;%WINDIR%\wbem
+Checking MD5 for file://C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/msvcrt/msvcrt2015/msvcrt2015-2.0-2.tar.bz2
+MD5 verified OK: file://C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/msvcrt/msvcrt2015/msvcrt2015-2.0-2.tar.bz2 48af5a575706dc7419b311a55372ff5c
+Checking MD5 for file://C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-6.3.2-1.tar.bz2
+MD5 verified OK: file://C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-6.3.2-1.tar.bz2 c63f7b0b8b84d41a242cb6468a42dc22
+Checking MD5 for file://C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-datumgrid/proj-datumgrid-1.8-1.tar.bz2
+MD5 verified OK: file://C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-datumgrid/proj-datumgrid-1.8-1.tar.bz2 ad76c52dbe3bda40eadc5c33c5bac442
+Checking MD5 for file://C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-hpgn/proj-hpgn-1.0-1.tar.bz2
+MD5 verified OK: file://C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-hpgn/proj-hpgn-1.0-1.tar.bz2 3142edcd0d73e44f52f9e793088df267
+2021/03/18 13:49:29 Extracting from file://C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/msvcrt/msvcrt2015/msvcrt2015-2.0-2.tar.bz2
+Installing file cygfile:///bin/concrt140.dll
+Installing file cygfile:///bin/msvcp140.dll
+Installing file cygfile:///bin/msvcp140_1.dll
+Installing file cygfile:///bin/msvcp140_2.dll
+Installing file cygfile:///bin/msvcp140_codecvt_ids.dll
+Installing file cygfile:///bin/vccorlib140.dll
+Installing file cygfile:///bin/vcruntime140.dll
+Installing file cygfile:///bin/vcruntime140_1.dll
+Installing file cygfile:///bin/vcomp140.dll
+2021/03/18 13:49:29 Extracting from file://C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-6.3.2-1.tar.bz2
+Installing file cygfile:///bin/
+Installing file cygfile:///bin/cct.exe
+Installing file cygfile:///bin/cs2cs.exe
+Installing file cygfile:///bin/geod.exe
+Installing file cygfile:///bin/gie.exe
+Installing file cygfile:///bin/proj.exe
+Installing file cygfile:///bin/projinfo.exe
+Installing file cygfile:///bin/proj_6_3.dll
+Installing file cygfile:///include/
+Installing file cygfile:///include/geodesic.h
+Installing file cygfile:///include/proj/
+Installing file cygfile:///include/proj/common.hpp
+Installing file cygfile:///include/proj/coordinateoperation.hpp
+Installing file cygfile:///include/proj/coordinatesystem.hpp
+Installing file cygfile:///include/proj/crs.hpp
+Installing file cygfile:///include/proj/datum.hpp
+Installing file cygfile:///include/proj/io.hpp
+Installing file cygfile:///include/proj/metadata.hpp
+Installing file cygfile:///include/proj/nn.hpp
+Installing file cygfile:///include/proj/util.hpp
+Installing file cygfile:///include/proj.h
+Installing file cygfile:///include/proj_api.h
+Installing file cygfile:///include/proj_constants.h
+Installing file cygfile:///include/proj_experimental.h
+Installing file cygfile:///lib/
+Installing file cygfile:///lib/proj.lib
+Installing file cygfile:///lib/proj_i.lib
+Installing file cygfile:///etc/
+Installing file cygfile:///etc/ini/
+Installing file cygfile:///etc/ini/proj.bat
+Installing file cygfile:///share/proj/
+Installing file cygfile:///share/proj/CH
+Installing file cygfile:///share/proj/GL27
+Installing file cygfile:///share/proj/ITRF2000
+Installing file cygfile:///share/proj/ITRF2008
+Installing file cygfile:///share/proj/ITRF2014
+Installing file cygfile:///share/proj/nad.lst
+Installing file cygfile:///share/proj/nad27
+Installing file cygfile:///share/proj/nad83
+Installing file cygfile:///share/proj/null
+Installing file cygfile:///share/proj/other.extra
+Installing file cygfile:///share/proj/proj.db
+Installing file cygfile:///share/proj/world
+Installing file cygfile:///share/cmake/proj4/
+Installing file cygfile:///share/cmake/proj4/proj4-config-version.cmake
+Installing file cygfile:///share/cmake/proj4/proj4-config.cmake
+Installing file cygfile:///share/cmake/proj4/proj4-namespace-targets-relwithdebinfo.cmake
+Installing file cygfile:///share/cmake/proj4/proj4-namespace-targets.cmake
+Installing file cygfile:///share/cmake/proj4/proj4-targets-relwithdebinfo.cmake
+Installing file cygfile:///share/cmake/proj4/proj4-targets.cmake
+2021/03/18 13:49:30 Extracting from file://C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-datumgrid/proj-datumgrid-1.8-1.tar.bz2
+Installing file cygfile:///./
+Installing file cygfile:///share/proj/alaska
+Installing file cygfile:///share/proj/BETA2007.gsb
+Installing file cygfile:///share/proj/conus
+Installing file cygfile:///share/proj/egm96_15.gtx
+Installing file cygfile:///share/proj/FL
+Installing file cygfile:///share/proj/hawaii
+Installing file cygfile:///share/proj/MD
+Installing file cygfile:///share/proj/ntf_r93.gsb
+Installing file cygfile:///share/proj/ntv1_can.dat
+Installing file cygfile:///share/proj/null
+Installing file cygfile:///share/proj/nzgd2kgrid0005.gsb
+Installing file cygfile:///share/proj/prvi
+Installing file cygfile:///share/proj/README.DATUMGRID
+Installing file cygfile:///share/proj/stgeorge
+Installing file cygfile:///share/proj/stlrnc
+Installing file cygfile:///share/proj/stpaul
+Installing file cygfile:///share/proj/TN
+Installing file cygfile:///share/proj/WI
+Installing file cygfile:///share/proj/WO
+2021/03/18 13:49:30 Extracting from file://C:\Users\Martin\AppData\Local\Temp/http%3a%2f%2fdownload.osgeo.org%2fosgeo4w%2f/x86_64/release/proj/proj-hpgn/proj-hpgn-1.0-1.tar.bz2
+Installing file cygfile:///share/proj/alhpgn.gsb
+Installing file cygfile:///share/proj/arhpgn.gsb
+Installing file cygfile:///share/proj/azhpgn.gsb
+Installing file cygfile:///share/proj/cnhpgn.gsb
+Installing file cygfile:///share/proj/cohpgn.gsb
+Installing file cygfile:///share/proj/cshpgn.gsb
+Installing file cygfile:///share/proj/emhpgn.gsb
+Installing file cygfile:///share/proj/eshpgn.gsb
+Installing file cygfile:///share/proj/ethpgn.gsb
+Installing file cygfile:///share/proj/flhpgn.gsb
+Installing file cygfile:///share/proj/gahpgn.gsb
+Installing file cygfile:///share/proj/guhpgn.gsb
+Installing file cygfile:///share/proj/hihpgn.gsb
+Installing file cygfile:///share/proj/iahpgn.gsb
+Installing file cygfile:///share/proj/ilhpgn.gsb
+Installing file cygfile:///share/proj/inhpgn.gsb
+Installing file cygfile:///share/proj/kshpgn.gsb
+Installing file cygfile:///share/proj/kyhpgn.gsb
+Installing file cygfile:///share/proj/lahpgn.gsb
+Installing file cygfile:///share/proj/mdhpgn.gsb
+Installing file cygfile:///share/proj/mehpgn.gsb
+Installing file cygfile:///share/proj/mihpgn.gsb
+Installing file cygfile:///share/proj/mnhpgn.gsb
+Installing file cygfile:///share/proj/mohpgn.gsb
+Installing file cygfile:///share/proj/mshpgn.gsb
+Installing file cygfile:///share/proj/nbhpgn.gsb
+Installing file cygfile:///share/proj/nchpgn.gsb
+Installing file cygfile:///share/proj/ndhpgn.gsb
+Installing file cygfile:///share/proj/nehpgn.gsb
+Installing file cygfile:///share/proj/njhpgn.gsb
+Installing file cygfile:///share/proj/nmhpgn.gsb
+Installing file cygfile:///share/proj/nvhpgn.gsb
+Installing file cygfile:///share/proj/nyhpgn.gsb
+Installing file cygfile:///share/proj/ohhpgn.gsb
+Installing file cygfile:///share/proj/okhpgn.gsb
+Installing file cygfile:///share/proj/pahpgn.gsb
+Installing file cygfile:///share/proj/pvhpgn.gsb
+Installing file cygfile:///share/proj/schpgn.gsb
+Installing file cygfile:///share/proj/sdhpgn.gsb
+Installing file cygfile:///share/proj/tnhpgn.gsb
+Installing file cygfile:///share/proj/uthpgn.gsb
+Installing file cygfile:///share/proj/vahpgn.gsb
+Installing file cygfile:///share/proj/wihpgn.gsb
+Installing file cygfile:///share/proj/wmhpgn.gsb
+Installing file cygfile:///share/proj/wohpgn.gsb
+Installing file cygfile:///share/proj/wshpgn.gsb
+Installing file cygfile:///share/proj/wthpgn.gsb
+Installing file cygfile:///share/proj/wvhpgn.gsb
+Installing file cygfile:///share/proj/wyhpgn.gsb
+Visited: 4 nodes out of 474 while creating dependency order.
+Dependency order of packages: msvcrt2015 proj-hpgn proj-datumgrid proj 
+2021/03/18 13:49:33 note: Installation Complete
+2021/03/18 13:49:33 Ending OSGeo4W install

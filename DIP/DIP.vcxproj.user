@@ -6,7 +6,7 @@ $(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LocalDebuggerEnvironment>PATH=%PATH%;..\opencv\bin
+    <LocalDebuggerEnvironment>PATH=%PATH%;..\opencv\bin;..\OSGeo4W\bin
 $(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>

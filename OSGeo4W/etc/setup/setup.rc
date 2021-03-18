@@ -1,0 +1,17 @@
+mirrors-lst
+	http://osgeo4w-oslandia.com/mirror/;oslandia;France;Paris
+	http://download.osgeo.org/osgeo4w/;OSGeo;USA;California
+	http://ftp.osuosl.org/pub/osgeo/download/osgeo4w/;OSL;USA;Oregon
+	http://www.norbit.de/osgeo4w/;norBIT GmbH;Germany;Niedersachsen
+window-placement
+	44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,160,1,0,0,84,1,0,0,209,4,0,0,228,2,0,0
+last-mode
+	Advanced
+last-mirror
+	http://download.osgeo.org/osgeo4w/
+net-method
+	Direct
+last-cache
+	C:\Users\Martin\AppData\Local\Temp
+last-menu-name
+	OSGeo4W
